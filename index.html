@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>LinkedIn Job Search — Find Jobs First</title>
-<script type="text/javascript" nonce="b97daaa3eaf44369bc529f23136" src="//local.adguard.org?ts=1776884277735&amp;type=content-script&amp;dmn=ppl-ai-code-interpreter-files.s3.amazonaws.com&amp;url=https%3A%2F%2Fppl-ai-code-interpreter-files.s3.amazonaws.com%2Fweb%2Fdirect-files%2F88714b7be889e5ba24c37afe43f4bc1a%2F43400933-e5d7-495d-bc9e-7bd57234560e%2F0eb54730.html%3Fresponse-content-disposition%3Dattachment%253B%2520filename%253D%2522index.html%2522%253B%2520filename%252A%253DUTF-8%2527%2527index.html%26AWSAccessKeyId%3DASIA2F3EMEYERK2PHY65%26Signature%3DIFurT%252FqYr%252FL2yM1%252BhVSkb9ucfuE%253D%26x-amz-security-token%3DIQoJb3JpZ2luX2VjEIz%252F%252F%252F%252F%252F%252F%252F%252F%252F%252FwEaCXVzLWVhc3QtMSJHMEUCIQClF2OXv2bdd0bf86Yg0sFtLWTs9oOI8hXey44nvXpuNwIgYxLyboYYFyntOqZ7Y5%252FcJosuavmW3nAVFSVI5s7sWAIq8wQIVRABGgw2OTk3NTMzMDk3MDUiDLLTefMLDcex%252Bv%252B64irQBO5GL7SDv4hE0y6xj8DYFjwO7HCHKT%252FhidH%252FPfy8PIG6NdaPqZZbJhOiQHo9vxKSJRQMWmvZO0kIcLBqAI4tRYu6YW9DcehCq8CMaM9IpoRHzxV7ahnmPu4MK1bgAAsPDCyWQux9hJbo2LaB7bKTjSBcTLJSDI62GvHITB%252BIVcexM0j6GGhd5GNWW5RfVsKQP6XmRwwHepxj28%252FBBC5pc39thfIE1gwXNrlaLaU%252FfL65tqFPV%252BOOm5ykWNIQmBHEtl8UK0f25UQGdZa0hcmlybAu4Zw3%252BlvlSWGfK29rjWZwJtAAva%252F9fEQIyTGmPDjRgtQfEbwsiw11wJlgHTkD7eL00hNQP%252B5wtKQluw2VB1J55ZWKhMpduq%252Fs0btsipUYuz5EDk8izOTamkgiSQi5kwGmOvVdMsHvMAy2Tw7RvQKa9FEq2pa3wOyYOW6aMn2vTfKpZUiyt3vfME5WmnMXTXwMAmzRC%252BKNvNiQo9cKAcAZC8c2kPydtIyX5bmoE7RhH2o5zGQYH44uFznQt0s58%252FMSV4bJ5b194AkWcVAoIzpKjcnJMTlB%252F%252FDhXV08iuPIAF9jHIPrZYBVeiJJf%252FIwRW5Nd%252FcZ3Qxr06cdTY8yJOm8u6mVJ%252BMNW5Bg8Do5ZX7qHubtkH6aOdmcLMgPTUb5tzT%252FhswyeSl4fFyLtu8MHQYShAaK2ebmhzLWiWu76UspzxHPAWjkRDSDmU%252FRzpygbbariBOR%252BIgTVXHjwrkcPmQc%252FVbM5o1GRRKNSMQ8WU5mBM%252FTN9sku6oum1ns2xcjxXAw08ikzwY6mAFbbVrcEpiqcahI1BECntMP9LAcuuL1Rhzv5tSb7t4o11aSwqeEEfmoGsYorPYcLIdc1yBE0zlgx6hMz%252B7OHIkqBs7s7rM37QjTA81P5oTTZ45vh8MEhFRoY%252FtA7K9oKFPY3Sw%252BaeOivI%252BfQOxHZUrqJdVtUNxQR8yp46K59moa0IIvf5msUvMTHP5LUeSRZUYI7b%252FG99EcrQ%253D%253D%26Expires%3D1776889121&amp;app=chrome.exe&amp;css=3&amp;js=1&amp;rel=1&amp;rji=1&amp;sbe=1&amp;stealth=1&amp;st-dnt"></script><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 <style>
@@ -103,6 +103,7 @@ body {
 
 @media (max-width: 600px) {
   .form-grid { grid-template-columns: 1fr; }
+  .btn-primary { width: 100%; justify-content: center; }
 }
 
 .field { display: flex; flex-direction: column; gap: 0.4rem; }
@@ -496,10 +497,8 @@ body {
       <div class="chip"><input type="checkbox" id="jt-int" value="I"><label for="jt-int">Internship</label></div>
     </div>
 
-
     <div style="margin-top:1rem;"></div>
 
-    <!-- Job Filters -->
     <div class="section-label">Job Filters</div>
     <div class="chip-group">
       <div class="chip"><input type="checkbox" id="jf-ea" value="ea"><label for="jf-ea">Easy Apply</label></div>
@@ -618,14 +617,14 @@ function buildURL() {
   let url = "https://www.linkedin.com/jobs/search/?";
   const params = [];
 
-  if (keyword)   params.push("keywords=" + encodeURIComponent(keyword));
-  if (location)  params.push("location=" + encodeURIComponent(location));
-  if (time)      params.push("f_TPR=" + time);
-  if (sort)      params.push("sortBy=" + sort);
-  if (wm.length) params.push("f_WT=" + wm.map(encodeURIComponent).join("%2C"));
-  if (jt.length) params.push("f_JT=" + jt.map(encodeURIComponent).join("%2C"));
-  if (exp)       params.push("f_E=" + exp);
-  if (salary)    params.push("f_SB2=" + salary);
+  if (keyword)    params.push("keywords=" + encodeURIComponent(keyword));
+  if (location)   params.push("location=" + encodeURIComponent(location));
+  if (time)       params.push("f_TPR=" + time);
+  if (sort)       params.push("sortBy=" + sort);
+  if (wm.length)  params.push("f_WT=" + wm.map(encodeURIComponent).join("%2C"));
+  if (jt.length)  params.push("f_JT=" + jt.map(encodeURIComponent).join("%2C"));
+  if (exp)        params.push("f_E=" + exp);
+  if (salary)     params.push("f_SB2=" + salary);
   if (easyApply)  params.push("f_EA=true");
   if (verified)   params.push("f_VJ=true");
   if (under10)    params.push("f_LF=f_AL");
@@ -669,7 +668,7 @@ function resetAll() {
 
 function setQuickFilter(preset) {
   resetAll();
-  if (preset === "past1h")  document.getElementById("sel-time").value = "r3600";
+  if (preset === "past1h")       document.getElementById("sel-time").value = "r3600";
   else if (preset === "past6h")  document.getElementById("sel-time").value = "r21600";
   else if (preset === "past24h") document.getElementById("sel-time").value = "r86400";
   updatePreview();

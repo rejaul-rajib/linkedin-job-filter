@@ -3,529 +3,884 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LinkedIn Job Filter</title>
-<script type="text/javascript" nonce="b97daaa3eaf44369bc529f23136" src="//local.adguard.org?ts=1776878208823&amp;type=content-script&amp;dmn=ppl-ai-code-interpreter-files.s3.amazonaws.com&amp;url=https%3A%2F%2Fppl-ai-code-interpreter-files.s3.amazonaws.com%2Fweb%2Fdirect-files%2Ffd400eeb52f42eeddd971b36a1653ecd%2F819bae9e-dd09-4b46-b0a6-a10e08327ab2%2F0eb54730.html%3Fresponse-content-disposition%3Dattachment%253B%2520filename%253D%2522index.html%2522%253B%2520filename%252A%253DUTF-8%2527%2527index.html%26AWSAccessKeyId%3DASIA2F3EMEYEZ6FNBWWP%26Signature%3DhP1Mtfwn9Utuv4UvhXWOi1jZAO0%253D%26x-amz-security-token%3DIQoJb3JpZ2luX2VjEIv%252F%252F%252F%252F%252F%252F%252F%252F%252F%252FwEaCXVzLWVhc3QtMSJHMEUCIFxyhIHxviCj0F1YFQMHovZMgq%252FrU3yVwJ5aykw6lA%252BUAiEA4kRmDUX5Jx8svoB37eBxg%252BLNm3z%252BpNQ9G25W17PRtrAq8wQIUxABGgw2OTk3NTMzMDk3MDUiDBEc06UDN573pBiE7irQBLe6n16pYExIblmXnaUK7yPcXrXLiKcY2wLifqpkw92GmwJf6LgFEiuO7C4Xe7m0Jw82fXtKsCBCAWCW6ZxWUQ238LtdK0b8FEMGhhxJ9vfVAJP8wY%252FNJ90t7mMpH1rNhT2L2EHel98t07AnyTf7LqT8vM5GOFMk5Al86zTtDVdou3yihRb0Yzcxs7hdplPi96Tfjkb%252B7q2O35PQZ0hHiBWmqGSZi2ei%252FNUzolVVwgjCgdir2ZjFd0kYmhpK5jF7U8JR4ryGutW%252BEnoBUliZn00kMsKUlhp%252FAXtqAzpMm7Zdu8erTweSL3ylngusmAB5x3fUwz9Je34mLeua%252FvBhw3QR1SHBY9WexUgLZHUIWxwEWLkKLiDrxhdbuP%252FE3QJ%252FMaTwDLqEK3CQtmIWxn4RzMdCjKL9VWbsBJ1KZmJL7hVYziAUrzfvysz%252FA8W6hvSM8QmUIWADfpwDzz7oocf736lGHAIBvFO5PKqxKava2vS22rZOj%252BQ8LSm1XPRy4YYDWBfdmcZq78ISGzWNy73taDQEgkgCONv4SdOFuAZqVbuk79enxbkVytIYLTy%252BznxpptUs4f9UbGZygOEfbdCmuQ7CMWRPaGBNNP%252F%252BwnVyMMkYReYBlgDQymX%252B0Qg527Qu7ALc9ylgGQtC6wgEaHdSbgjkOrbxRyuF0IoboHIA10UriIHw9eluIw9NvgMRvhisAso5arpETDw%252F8EXkTbJeNBjGmzxFXTNw3Kv867Y9eI6D1hMNgHSniyXIm5WKAuG886HzTrZi%252FffJMosa%252FrnA4cUw6pykzwY6mAFR9JHxmF6A%252B1f68XUa8NG59Rch3RaYD8K8S4zO2ZZv%252Bfv3hqMsq78U%252BvxbsYvWsMeihLiWSRZTX1jsNe0IO8GjAkZJ4NcUMav6y2L%252BXvlX7j3vBDsTDim46KIaAmVfVqi3FD19FbgaO%252B49HM18fQ6y8Bq8%252BKOQjqYWP5I17B8yKvSxXG76RziggglEKwqEvZpjoAn9J9FFEQ%253D%253D%26Expires%3D1776883001&amp;app=chrome.exe&amp;css=3&amp;js=1&amp;rel=1&amp;rji=1&amp;sbe=1&amp;stealth=1&amp;st-dnt"></script><link rel="preconnect" href="https://fonts.googleapis.com">
+<title>LinkedIn Job Search — Find Jobs First</title>
+<script type="text/javascript" nonce="b97daaa3eaf44369bc529f23136" src="//local.adguard.org?ts=1776884277735&amp;type=content-script&amp;dmn=ppl-ai-code-interpreter-files.s3.amazonaws.com&amp;url=https%3A%2F%2Fppl-ai-code-interpreter-files.s3.amazonaws.com%2Fweb%2Fdirect-files%2Fe0b570c257128b50972f9d1ae419dc87%2F25372c82-cf06-41a5-bd26-b635050c7acb%2F0eb54730.html%3Fresponse-content-disposition%3Dattachment%253B%2520filename%253D%2522index.html%2522%253B%2520filename%252A%253DUTF-8%2527%2527index.html%26AWSAccessKeyId%3DASIA2F3EMEYEX6CFS2F6%26Signature%3DszRX%252Bz9FfZirRkFa6tj68SfXRMM%253D%26x-amz-security-token%3DIQoJb3JpZ2luX2VjEIv%252F%252F%252F%252F%252F%252F%252F%252F%252F%252FwEaCXVzLWVhc3QtMSJGMEQCIEAYsyycPnN6YOdbT7Cgx%252B5n1SgFxtjVb3wOkqGm6N6GAiBuab%252FqfjZhKSR%252BA9FtaLdo0keLPuBxCbsVOhWYsAacGirzBAhUEAEaDDY5OTc1MzMwOTcwNSIMNF9c9Bfkoqx8%252Fwg%252BKtAErrK5LdIn9KQFuGqCMdP3i0lbCoL7%252B3IJQbpQG9eP2RjGnFIeSh7d5w40nLUjTKJ%252FJSKr40GR4omgVCMiH9dYva%252BfoCV6fkoJjFPxmeUc0i1nuRreIqLwflnHT6FD3q4p6sdZL5LT2D0DIQG8xH9FjVlMt3waoUr8Pf%252BPDlsY0DjnaejJmCrmw87Tq7iSfvq1yKIvlKSQEpX1XgFwHCmJm8zb8TBkpIZWtVeDvkSgNdADgsJBLqOG3vj8xRkDgs45Z9nh0X%252BuZD5NccnHeOaA%252FMPBT9oTpogHbtInroebufXViFt9OBLE0GS4Y7mEkWGZ1BJt7NyTxoYmZXiOcvYjzbLko7%252BQjPsCwFLVgzutznHm2GpFA8N5FX5FAyuHUWhVcVrVADMW2XjU1mNdUqvhLvztllBKLHSMz8Jdf6ftOzK3aZlAhMzAWV34PoD7BI%252BFKutzgy5jkviRXC47Iw7I9CAild1H0aHOwhB2jdKs3dTxmrd2uxeb7zqO3divGUJGnFmljv%252B2Wzj7JpB7SVCgV6pO%252F4HHRg5hnofB7A62ytfajP3w3ZsVc10275MXsAlKYySI7hDOVuMxh1BbXUShi11ktjUtkLjK4Z6K%252F450Rqk2RgE0tW0WJbWioggyNuSA17Pu%252B3QPCJOWTeL7xHK6DCHxJy9BooQVy%252F%252FdjMgpexQuuV7VNbEEaNG83D1bTWDzT8EAye%252F1H%252Bpcrof2ugIRJ4khK0XtvX6QHhHjzcl9xfGCJ0cdKlCGYNt28jBzsI%252F1LsjijCL%252BI6z2HrF5tatvrzC4sqTPBjqZAcWOaVv6CIUggu%252FWY5Mee9xij9W8gpng3YI5Vtb9Oomplx7rJRu790z%252FyGf3nMZ0VUWbKekJ%252B8theBdSGV6OgEU4VDNgGMKKHIu4R4Z5MXCHT8PScm2TQZU0ZOKO01mHwBoEaysCqjB4sV8uEh0fIn8rJEKfrqSLsVw2qNB2m37ue5GYoFPhsGl3VYBjmvS6FEqTRq4aGiwHHw%253D%253D%26Expires%3D1776886053&amp;app=chrome.exe&amp;css=3&amp;js=1&amp;rel=1&amp;rji=1&amp;sbe=1&amp;stealth=1&amp;st-dnt"></script><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 <style>
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-  :root, [data-theme="light"] {
-    --color-bg: #f7f6f2;
-    --color-surface: #f9f8f5;
-    --color-surface-2: #fbfbf9;
-    --color-surface-offset: #edeae5;
-    --color-border: #d4d1ca;
-    --color-text: #28251d;
-    --color-text-muted: #7a7974;
-    --color-text-faint: #bab9b4;
-    --color-primary: #01696f;
-    --color-primary-hover: #0c4e54;
-    --color-primary-highlight: #cedcd8;
-    --color-success: #437a22;
-    --color-success-highlight: #d4dfcc;
-    --shadow-sm: 0 1px 3px oklch(0.2 0.01 80 / 0.07);
-    --shadow-md: 0 4px 16px oklch(0.2 0.01 80 / 0.09);
-    --radius-sm: 0.375rem;
-    --radius-md: 0.5rem;
-    --radius-lg: 0.75rem;
-    --radius-full: 9999px;
-    --font-body: "Inter", "Helvetica Neue", sans-serif;
-    --transition: 160ms cubic-bezier(0.16, 1, 0.3, 1);
-  }
+:root, [data-theme="light"] {
+  --color-bg:             #f7f6f2;
+  --color-surface:        #f9f8f5;
+  --color-surface-2:      #fbfbf9;
+  --color-surface-offset: #edeae5;
+  --color-border:         #d4d1ca;
+  --color-text:           #28251d;
+  --color-text-muted:     #7a7974;
+  --color-text-faint:     #bab9b4;
+  --color-primary:        #01696f;
+  --color-primary-hover:  #0c4e54;
+  --color-primary-hl:     #cedcd8;
+  --color-hero-bg:        #0f1f20;
+  --color-hero-text:      #e8f4f5;
+  --shadow-sm: 0 1px 3px oklch(0.2 0.01 80 / 0.07);
+  --shadow-md: 0 4px 20px oklch(0.2 0.01 80 / 0.10);
+  --shadow-lg: 0 12px 40px oklch(0.2 0.01 80 / 0.13);
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-full: 9999px;
+  --transition: 160ms cubic-bezier(0.16, 1, 0.3, 1);
+  --font-display: "Instrument Serif", Georgia, serif;
+  --font-body: "Inter", "Helvetica Neue", sans-serif;
+}
 
-  [data-theme="dark"] {
-    --color-bg: #141312;
-    --color-surface: #1c1b19;
-    --color-surface-2: #232220;
-    --color-surface-offset: #2a2927;
-    --color-border: #363432;
-    --color-text: #cdccca;
-    --color-text-muted: #797876;
-    --color-text-faint: #4f4e4c;
-    --color-primary: #4f98a3;
-    --color-primary-hover: #3a818b;
-    --color-primary-highlight: #1f3336;
-    --color-success: #6daa45;
-    --color-success-highlight: #1e3020;
-    --shadow-sm: 0 1px 3px oklch(0 0 0 / 0.25);
-    --shadow-md: 0 4px 16px oklch(0 0 0 / 0.35);
-  }
+[data-theme="dark"] {
+  --color-bg:             #111110;
+  --color-surface:        #1a1917;
+  --color-surface-2:      #222120;
+  --color-surface-offset: #2c2b29;
+  --color-border:         #363432;
+  --color-text:           #d4d3d1;
+  --color-text-muted:     #7a7876;
+  --color-text-faint:     #4a4947;
+  --color-primary:        #4f98a3;
+  --color-primary-hover:  #3a818b;
+  --color-primary-hl:     #1b3436;
+  --color-hero-bg:        #0a1a1b;
+  --color-hero-text:      #d4eeef;
+  --shadow-sm: 0 1px 3px oklch(0 0 0 / 0.3);
+  --shadow-md: 0 4px 20px oklch(0 0 0 / 0.4);
+  --shadow-lg: 0 12px 40px oklch(0 0 0 / 0.5);
+}
 
-  html {
-    -webkit-font-smoothing: antialiased;
-    scroll-behavior: smooth;
-  }
+html { -webkit-font-smoothing: antialiased; scroll-behavior: smooth; }
 
-  body {
-    min-height: 100dvh;
-    font-family: var(--font-body);
-    font-size: 1rem;
-    color: var(--color-text);
-    background: var(--color-bg);
-    line-height: 1.6;
-    transition: background var(--transition), color var(--transition);
-  }
+body {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--color-text);
+  background: var(--color-bg);
+  line-height: 1.6;
+  min-height: 100dvh;
+  transition: background var(--transition), color var(--transition);
+}
 
-  /* Layout */
-  .app {
-    max-width: 860px;
-    margin-inline: auto;
-    padding: clamp(1.5rem, 5vw, 3rem) clamp(1rem, 4vw, 2rem);
-  }
+/* ─── HERO ─────────────────────────────────────── */
+.hero {
+  background: var(--color-hero-bg);
+  color: var(--color-hero-text);
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: clamp(3rem, 8vw, 6rem) clamp(1.25rem, 5vw, 3rem);
+  position: relative;
+  overflow: hidden;
+}
 
-  /* Header */
-  .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 2.5rem;
-    gap: 1rem;
-    flex-wrap: wrap;
-  }
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 70% 50% at 50% 0%, oklch(0.55 0.12 192 / 0.18) 0%, transparent 70%),
+    radial-gradient(ellipse 40% 30% at 80% 80%, oklch(0.45 0.10 192 / 0.10) 0%, transparent 60%);
+  pointer-events: none;
+}
 
-  .logo {
-    display: flex;
-    align-items: center;
-    gap: 0.625rem;
-  }
+.hero-nav {
+  position: absolute;
+  top: 1.5rem;
+  left: 0; right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: clamp(1.25rem, 5vw, 3rem);
+  z-index: 10;
+}
 
-  .logo-icon {
-    width: 36px;
-    height: 36px;
-    background: var(--color-primary);
-    border-radius: var(--radius-md);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-  }
+.hero-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: oklch(0.75 0.06 192);
+  letter-spacing: 0.02em;
+}
 
-  .logo-icon svg { color: #fff; }
+.hero-logo-dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  box-shadow: 0 0 8px oklch(0.55 0.12 192 / 0.6);
+}
 
-  .logo-text {
-    font-size: 1.125rem;
-    font-weight: 600;
-    color: var(--color-text);
-    line-height: 1.2;
-  }
+.theme-toggle {
+  background: oklch(1 0 0 / 0.06);
+  border: 1px solid oklch(1 0 0 / 0.12);
+  border-radius: var(--radius-full);
+  width: 36px; height: 36px;
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer;
+  color: oklch(0.75 0.04 192);
+  transition: background var(--transition), color var(--transition);
+}
+.theme-toggle:hover { background: oklch(1 0 0 / 0.12); }
+[data-theme="light"] .theme-toggle {
+  background: oklch(0 0 0 / 0.06);
+  border-color: oklch(0 0 0 / 0.12);
+  color: #555;
+}
 
-  .logo-sub {
-    font-size: 0.75rem;
-    color: var(--color-text-muted);
-    font-weight: 400;
-  }
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: oklch(0.55 0.12 192 / 0.15);
+  border: 1px solid oklch(0.55 0.12 192 / 0.3);
+  color: oklch(0.78 0.08 192);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.35rem 0.875rem;
+  border-radius: var(--radius-full);
+  margin-bottom: 2rem;
+}
 
-  .theme-toggle {
-    background: var(--color-surface);
-    border: 1px solid var(--color-border);
-    border-radius: var(--radius-full);
-    width: 36px;
-    height: 36px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    color: var(--color-text-muted);
-    transition: background var(--transition), color var(--transition), border-color var(--transition);
-    flex-shrink: 0;
-  }
+.hero-badge-dot {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+  animation: pulse 2s ease-in-out infinite;
+}
 
-  .theme-toggle:hover {
-    background: var(--color-surface-offset);
-    color: var(--color-text);
-  }
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.7); }
+}
 
-  /* Keyword bar */
-  .keyword-bar {
-    background: var(--color-surface);
-    border: 1px solid var(--color-border);
-    border-radius: var(--radius-lg);
-    padding: 1.25rem 1.5rem;
-    margin-bottom: 1.75rem;
-    box-shadow: var(--shadow-sm);
-  }
+.hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.75rem, 7vw, 5.5rem);
+  font-weight: 400;
+  line-height: 1.08;
+  color: var(--color-hero-text);
+  margin-bottom: 1.25rem;
+  max-width: 14ch;
+}
 
-  .keyword-bar label {
-    display: block;
-    font-size: 0.75rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    color: var(--color-text-muted);
-    margin-bottom: 0.625rem;
-  }
+.hero-title em {
+  font-style: italic;
+  color: oklch(0.72 0.10 192);
+}
 
-  .keyword-input-row {
-    display: flex;
-    gap: 0.625rem;
-    align-items: center;
-  }
+.hero-sub {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  color: oklch(0.65 0.04 192);
+  max-width: 52ch;
+  line-height: 1.65;
+  margin-bottom: 3rem;
+}
 
-  .keyword-input {
-    flex: 1;
-    background: var(--color-bg);
-    border: 1px solid var(--color-border);
-    border-radius: var(--radius-md);
-    padding: 0.625rem 0.875rem;
-    font-size: 0.9375rem;
-    color: var(--color-text);
-    font-family: var(--font-body);
-    transition: border-color var(--transition), box-shadow var(--transition);
-    min-width: 0;
-  }
+.hero-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--color-primary);
+  color: #fff;
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  padding: 0.875rem 2rem;
+  border-radius: var(--radius-full);
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: background var(--transition), transform var(--transition), box-shadow var(--transition);
+  box-shadow: 0 4px 20px oklch(0.45 0.12 192 / 0.35);
+}
+.hero-cta:hover {
+  background: var(--color-primary-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px oklch(0.45 0.12 192 / 0.45);
+}
+.hero-cta svg { transition: transform var(--transition); }
+.hero-cta:hover svg { transform: translateY(3px); }
 
-  .keyword-input:focus {
-    outline: none;
-    border-color: var(--color-primary);
-    box-shadow: 0 0 0 3px oklch(from var(--color-primary) l c h / 0.15);
-  }
+/* ─── MAIN SEARCH SECTION ───────────────────────── */
+#search {
+  max-width: 900px;
+  margin-inline: auto;
+  padding: clamp(2rem, 5vw, 3.5rem) clamp(1.25rem, 5vw, 2.5rem);
+}
 
-  .btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4rem;
-    padding: 0.625rem 1rem;
-    border-radius: var(--radius-md);
-    font-size: 0.875rem;
-    font-weight: 500;
-    font-family: var(--font-body);
-    cursor: pointer;
-    border: 1px solid transparent;
-    transition: background var(--transition), color var(--transition), border-color var(--transition), box-shadow var(--transition);
-    white-space: nowrap;
-    text-decoration: none;
-  }
+.search-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2.5rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
 
-  .btn:active { transform: scale(0.97); }
+.search-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 3vw, 2.25rem);
+  font-weight: 400;
+  color: var(--color-text);
+}
 
-  .btn-primary {
-    background: var(--color-primary);
-    color: #fff;
-    border-color: var(--color-primary);
-  }
-  .btn-primary:hover { background: var(--color-primary-hover); border-color: var(--color-primary-hover); }
+/* ─── CARD ──────────────────────────────────────── */
+.card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: clamp(1.5rem, 3vw, 2.25rem);
+  box-shadow: var(--shadow-md);
+  margin-bottom: 2rem;
+}
 
-  .btn-ghost {
-    background: transparent;
-    color: var(--color-text-muted);
-    border-color: var(--color-border);
-  }
-  .btn-ghost:hover {
-    background: var(--color-surface-offset);
-    color: var(--color-text);
-  }
+/* ─── FORM GRID ─────────────────────────────────── */
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem 1.25rem;
+}
 
-  .btn-success {
-    background: var(--color-success-highlight);
-    color: var(--color-success);
-    border-color: transparent;
-  }
+@media (max-width: 600px) {
+  .form-grid { grid-template-columns: 1fr; }
+}
 
-  /* Open all */
-  .open-all-bar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 1rem;
-    gap: 1rem;
-    flex-wrap: wrap;
-  }
+.form-full { grid-column: 1 / -1; }
 
-  .section-title {
-    font-size: 0.75rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    color: var(--color-text-muted);
-  }
+.field { display: flex; flex-direction: column; gap: 0.4rem; }
 
-  /* Filter cards */
-  .filter-list {
-    display: flex;
-    flex-direction: column;
-    gap: 0.625rem;
-  }
+.field label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-text-muted);
+}
 
-  .filter-card {
-    background: var(--color-surface);
-    border: 1px solid var(--color-border);
-    border-radius: var(--radius-lg);
-    padding: 1rem 1.25rem;
-    display: grid;
-    grid-template-columns: 1fr auto;
-    align-items: center;
-    gap: 1rem;
-    box-shadow: var(--shadow-sm);
-    transition: background var(--transition), box-shadow var(--transition), border-color var(--transition);
-  }
+.field input,
+.field select {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 0.65rem 0.875rem;
+  font-size: 0.9375rem;
+  font-family: var(--font-body);
+  color: var(--color-text);
+  width: 100%;
+  transition: border-color var(--transition), box-shadow var(--transition);
+  appearance: none;
+  -webkit-appearance: none;
+}
 
-  .filter-card:hover {
-    background: var(--color-surface-2);
-    box-shadow: var(--shadow-md);
-    border-color: oklch(from var(--color-primary) l c h / 0.3);
-  }
+.field input::placeholder { color: var(--color-text-faint); }
 
-  .filter-meta {
-    display: flex;
-    align-items: center;
-    gap: 0.875rem;
-    min-width: 0;
-  }
+.field input:focus,
+.field select:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px oklch(from var(--color-primary) l c h / 0.15);
+}
 
-  .time-badge {
-    background: var(--color-primary-highlight);
-    color: var(--color-primary);
-    font-size: 0.75rem;
-    font-weight: 700;
-    padding: 0.25rem 0.625rem;
-    border-radius: var(--radius-full);
-    white-space: nowrap;
-    flex-shrink: 0;
-    font-variant-numeric: tabular-nums;
-  }
+.select-wrap { position: relative; }
+.select-wrap::after {
+  content: "";
+  position: absolute;
+  right: 0.875rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0; height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 5px solid var(--color-text-muted);
+  pointer-events: none;
+}
+.select-wrap select { padding-right: 2.25rem; }
 
-  .filter-info { min-width: 0; }
+/* ─── DIVIDER ───────────────────────────────────── */
+.divider {
+  height: 1px;
+  background: var(--color-border);
+  margin: 1.5rem 0;
+}
 
-  .filter-label {
-    font-size: 0.9375rem;
-    font-weight: 500;
-    color: var(--color-text);
-    line-height: 1.3;
-  }
+/* ─── SECTION LABEL ─────────────────────────────── */
+.section-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-text-muted);
+  margin-bottom: 0.875rem;
+}
 
-  .filter-url {
-    font-size: 0.75rem;
-    color: var(--color-text-faint);
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 420px;
-    font-family: "SF Mono", "Fira Code", monospace;
-    margin-top: 0.2rem;
-  }
+/* ─── CHECKBOX GROUPS ───────────────────────────── */
+.chip-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
 
-  .filter-actions {
-    display: flex;
-    gap: 0.5rem;
-    flex-shrink: 0;
-  }
+.chip input[type="checkbox"] { display: none; }
 
-  .icon-btn {
-    background: transparent;
-    border: 1px solid var(--color-border);
-    border-radius: var(--radius-md);
-    width: 34px;
-    height: 34px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    color: var(--color-text-muted);
-    transition: background var(--transition), color var(--transition), border-color var(--transition);
-    flex-shrink: 0;
-  }
+.chip label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.375rem 0.875rem;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--color-border);
+  background: var(--color-bg);
+  color: var(--color-text-muted);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background var(--transition), color var(--transition), border-color var(--transition);
+  user-select: none;
+}
 
-  .icon-btn:hover {
-    background: var(--color-surface-offset);
-    color: var(--color-text);
-  }
+.chip input[type="checkbox"]:checked + label {
+  background: var(--color-primary-hl);
+  border-color: oklch(from var(--color-primary) l c h / 0.4);
+  color: var(--color-primary);
+}
 
-  .icon-btn.copied {
-    background: var(--color-success-highlight);
-    color: var(--color-success);
-    border-color: transparent;
-  }
+.chip label:hover {
+  background: var(--color-surface-offset);
+  color: var(--color-text);
+}
 
-  /* Footer */
-  .footer {
-    margin-top: 2.5rem;
-    padding-top: 1.5rem;
-    border-top: 1px solid var(--color-border);
-    font-size: 0.75rem;
-    color: var(--color-text-faint);
-    text-align: center;
-  }
+/* ─── QUICK FILTERS ─────────────────────────────── */
+.quick-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 0.75rem;
+}
 
-  /* Responsive */
-  @media (max-width: 600px) {
-    .filter-card {
-      grid-template-columns: 1fr;
-    }
-    .filter-actions {
-      justify-content: flex-end;
-    }
-    .filter-url { max-width: 100%; }
-  }
+.quick-card {
+  background: var(--color-surface-2);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 0.875rem 1rem;
+  cursor: pointer;
+  transition: background var(--transition), border-color var(--transition), box-shadow var(--transition);
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.quick-card:hover {
+  background: var(--color-surface-offset);
+  border-color: oklch(from var(--color-primary) l c h / 0.35);
+  box-shadow: var(--shadow-sm);
+}
+
+.quick-card-icon {
+  width: 32px; height: 32px;
+  background: var(--color-primary-hl);
+  border-radius: var(--radius-md);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--color-primary);
+  flex-shrink: 0;
+}
+
+.quick-card-info { min-width: 0; }
+.quick-card-label {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--color-text);
+  line-height: 1.2;
+}
+.quick-card-desc {
+  font-size: 0.6875rem;
+  color: var(--color-text-muted);
+  margin-top: 0.15rem;
+}
+
+/* ─── ACTIONS ───────────────────────────────────── */
+.actions {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  margin-top: 1.75rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.7rem 1.375rem;
+  border-radius: var(--radius-full);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  font-family: var(--font-body);
+  cursor: pointer;
+  border: 1px solid transparent;
+  text-decoration: none;
+  transition: background var(--transition), color var(--transition), border-color var(--transition), box-shadow var(--transition), transform var(--transition);
+  white-space: nowrap;
+}
+.btn:active { transform: scale(0.97); }
+
+.btn-primary {
+  background: var(--color-primary);
+  color: #fff;
+  box-shadow: 0 3px 12px oklch(from var(--color-primary) l c h / 0.3);
+}
+.btn-primary:hover {
+  background: var(--color-primary-hover);
+  box-shadow: 0 5px 18px oklch(from var(--color-primary) l c h / 0.4);
+  transform: translateY(-1px);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--color-text-muted);
+  border-color: var(--color-border);
+}
+.btn-ghost:hover {
+  background: var(--color-surface-offset);
+  color: var(--color-text);
+}
+
+/* ─── URL PREVIEW ───────────────────────────────── */
+.url-preview {
+  margin-top: 1.5rem;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 1rem 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.url-preview-label {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--color-text-faint);
+  flex-shrink: 0;
+}
+
+.url-preview-text {
+  font-family: "SF Mono", "Fira Code", "Consolas", monospace;
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  word-break: break-all;
+  flex: 1;
+  min-width: 0;
+}
+
+.url-copy-btn {
+  background: transparent;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  width: 30px; height: 30px;
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer;
+  color: var(--color-text-muted);
+  flex-shrink: 0;
+  transition: background var(--transition), color var(--transition);
+}
+.url-copy-btn:hover { background: var(--color-surface-offset); color: var(--color-text); }
+.url-copy-btn.copied { background: oklch(0.43 0.12 145 / 0.15); color: #437a22; border-color: transparent; }
+
+/* ─── FOOTER ────────────────────────────────────── */
+.footer {
+  border-top: 1px solid var(--color-border);
+  padding: 2rem clamp(1.25rem, 5vw, 2.5rem);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin-inline: auto;
+  font-size: 0.8rem;
+  color: var(--color-text-faint);
+}
+
+.footer-note {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.footer-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: var(--color-text-faint);
+}
+
+.theme-toggle-main {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-full);
+  width: 36px; height: 36px;
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer;
+  color: var(--color-text-muted);
+  transition: background var(--transition), color var(--transition);
+}
+.theme-toggle-main:hover {
+  background: var(--color-surface-offset);
+  color: var(--color-text);
+}
+
+.theme-toggle-main {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-full);
+  width: 36px; height: 36px;
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer;
+  color: var(--color-text-muted);
+  transition: background var(--transition), color var(--transition);
+}
+.theme-toggle-main:hover {
+  background: var(--color-surface-offset);
+  color: var(--color-text);
+}
 </style>
 </head>
 <body>
 
-<div class="app">
+<!-- ── SEARCH SECTION ──────────────────────────── -->
+<section id="search">
 
-  <!-- Header -->
-  <header class="header">
-    <div class="logo">
-      <div class="logo-icon">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
-        </svg>
-      </div>
-      <div>
-        <div class="logo-text">LinkedIn Job Filter</div>
-        <div class="logo-sub">Quick-access time filters</div>
-      </div>
-    </div>
-    <button class="theme-toggle" data-theme-toggle aria-label="Toggle theme">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <div class="search-header">
+    <h2 class="search-title">Search LinkedIn Jobs</h2>
+    <button class="theme-toggle-main" data-theme-toggle aria-label="Toggle theme">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
       </svg>
     </button>
-  </header>
+  </div>
 
-  <!-- Keyword bar -->
-  <div class="keyword-bar">
-    <label for="keyword-input">Search Keyword</label>
-    <div class="keyword-input-row">
-      <input
-        id="keyword-input"
-        class="keyword-input"
-        type="text"
-        value="Quality Control Chemist"
-        placeholder="e.g. Scientist, Analytical Development"
-        autocomplete="off"
-        spellcheck="false"
-      />
-      <button class="btn btn-primary" onclick="applyKeyword()">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="20 6 9 17 4 12"/></svg>
-        Apply
+  <div class="card">
+
+    <!-- Row 1: keyword + location -->
+    <div class="form-grid">
+      <div class="field">
+        <label for="inp-keyword">Job Title or Keyword</label>
+        <input id="inp-keyword" type="text" placeholder="e.g. Quality Control Chemist" value="Quality Control Chemist" autocomplete="off" spellcheck="false">
+      </div>
+      <div class="field">
+        <label for="inp-location">Location</label>
+        <input id="inp-location" type="text" placeholder="e.g. Alabama, United States" value="" autocomplete="off" spellcheck="false">
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Row 2: time + sort + salary -->
+    <div class="form-grid">
+      <div class="field">
+        <label for="sel-time">Date Posted</label>
+        <div class="select-wrap">
+          <select id="sel-time">
+            <option value="">Any time</option>
+            <option value="r3600" selected>Past Hour</option>
+            <option value="r7200">Past 2 Hours</option>
+            <option value="r10800">Past 3 Hours</option>
+            <option value="r21600">Past 6 Hours</option>
+            <option value="r86400">Past 24 Hours</option>
+            <option value="r604800">Past Week</option>
+            <option value="r2592000">Past Month</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="sel-sort">Sort By</label>
+        <div class="select-wrap">
+          <select id="sel-sort">
+            <option value="R">Relevance</option>
+            <option value="DD">Date Posted</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="sel-salary">Salary (experimental)</label>
+        <div class="select-wrap">
+          <select id="sel-salary">
+            <option value="">Any salary</option>
+            <option value="40000">$40,000+</option>
+            <option value="60000">$60,000+</option>
+            <option value="80000">$80,000+</option>
+            <option value="100000">$100,000+</option>
+            <option value="120000">$120,000+</option>
+            <option value="140000">$140,000+</option>
+            <option value="160000">$160,000+</option>
+            <option value="180000">$180,000+</option>
+            <option value="200000">$200,000+</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="sel-exp">Experience Level</label>
+        <div class="select-wrap">
+          <select id="sel-exp">
+            <option value="">Any level</option>
+            <option value="1">Internship</option>
+            <option value="2">Entry level</option>
+            <option value="3">Associate</option>
+            <option value="4">Mid-Senior level</option>
+            <option value="5">Director</option>
+            <option value="6">Executive</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Work model -->
+    <div class="section-label">Work Model</div>
+    <div class="chip-group">
+      <div class="chip"><input type="checkbox" id="wm-onsite" value="1"><label for="wm-onsite">On-site</label></div>
+      <div class="chip"><input type="checkbox" id="wm-remote" value="2"><label for="wm-remote">Remote</label></div>
+      <div class="chip"><input type="checkbox" id="wm-hybrid" value="3"><label for="wm-hybrid">Hybrid</label></div>
+    </div>
+
+    <div style="margin-top:1rem;"></div>
+
+    <!-- Job type -->
+    <div class="section-label">Job Type</div>
+    <div class="chip-group">
+      <div class="chip"><input type="checkbox" id="jt-ft" value="F"><label for="jt-ft">Full-time</label></div>
+      <div class="chip"><input type="checkbox" id="jt-pt" value="P"><label for="jt-pt">Part-time</label></div>
+      <div class="chip"><input type="checkbox" id="jt-ct" value="C"><label for="jt-ct">Contract</label></div>
+      <div class="chip"><input type="checkbox" id="jt-tmp" value="T"><label for="jt-tmp">Temporary</label></div>
+      <div class="chip"><input type="checkbox" id="jt-vol" value="V"><label for="jt-vol">Volunteer</label></div>
+      <div class="chip"><input type="checkbox" id="jt-int" value="I"><label for="jt-int">Internship</label></div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Quick filters -->
+    <div class="section-label">Quick Filters</div>
+    <div class="quick-grid">
+      <div class="quick-card" onclick="setQuickFilter('past1h')">
+        <div class="quick-card-icon">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <div class="quick-card-info">
+          <div class="quick-card-label">Past Hour</div>
+          <div class="quick-card-desc">Freshest listings</div>
+        </div>
+      </div>
+      <div class="quick-card" onclick="setQuickFilter('past6h')">
+        <div class="quick-card-icon">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 14 14"/></svg>
+        </div>
+        <div class="quick-card-info">
+          <div class="quick-card-label">Past 6 Hours</div>
+          <div class="quick-card-desc">Still very fresh</div>
+        </div>
+      </div>
+      <div class="quick-card" onclick="setQuickFilter('past24h')">
+        <div class="quick-card-icon">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        </div>
+        <div class="quick-card-info">
+          <div class="quick-card-label">Past 24 Hours</div>
+          <div class="quick-card-desc">Last day of postings</div>
+        </div>
+      </div>
+      <div class="quick-card" onclick="setQuickFilter('reset')">
+        <div class="quick-card-icon">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 .49-4.5"/></svg>
+        </div>
+        <div class="quick-card-info">
+          <div class="quick-card-label">Reset All</div>
+          <div class="quick-card-desc">Clear all filters</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- URL preview -->
+    <div class="url-preview" id="url-preview">
+      <span class="url-preview-label">URL</span>
+      <span class="url-preview-text" id="url-preview-text">—</span>
+      <button class="url-copy-btn" id="url-copy-btn" onclick="copyURL()" title="Copy URL" aria-label="Copy URL">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+        </svg>
       </button>
     </div>
+
+    <!-- Actions -->
+    <div class="actions">
+      <button class="btn btn-primary" onclick="openSearch()">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        Search LinkedIn Jobs
+      </button>
+      <button class="btn btn-ghost" onclick="resetAll()">
+        Reset all filters
+      </button>
+    </div>
+
+    <p style="font-size:0.75rem; color:var(--color-text-faint); margin-top:1.25rem; line-height:1.5;">
+      No logins. No tracking. No ads. &nbsp;·&nbsp; You must have a LinkedIn account and be signed in to view results.
+    </p>
+
   </div>
+</section>
 
-  <!-- Open all + section label -->
-  <div class="open-all-bar">
-    <span class="section-title">Time Filters</span>
-    <button class="btn btn-ghost" onclick="openAll()">
-      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-      Open All
-    </button>
+<!-- ── FOOTER ──────────────────────────────────── -->
+<footer class="footer">
+  <span>Built for Rejaul Islam &mdash; Biotech &amp; Pharma job search</span>
+  <div class="footer-note">
+    <span class="footer-pill">
+      <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      No data stored
+    </span>
+    <span class="footer-pill">
+      <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+      Pure HTML
+    </span>
   </div>
-
-  <!-- Filter cards -->
-  <div class="filter-list" id="filter-list"></div>
-
-  <footer class="footer">
-    Built for Rejaul Islam &mdash; LinkedIn job search workflow
-  </footer>
-
-</div>
+</footer>
 
 <script>
-  const FILTERS = [
-    { label: "Last 1 Hour",  seconds: 3600   },
-    { label: "Last 2 Hours", seconds: 7200   },
-    { label: "Last 3 Hours", seconds: 10800  },
-    { label: "Last 6 Hours", seconds: 21600  },
-    { label: "Last 24 Hours",seconds: 86400  },
-    { label: "Last 3 Days",  seconds: 259200 },
-  ];
+// ── URL builder ──────────────────────────────────
+function buildURL() {
+  const keyword  = document.getElementById("inp-keyword").value.trim();
+  const location = document.getElementById("inp-location").value.trim();
+  const time     = document.getElementById("sel-time").value;
+  const sort     = document.getElementById("sel-sort").value;
+  const salary   = document.getElementById("sel-salary").value;
+  const exp      = document.getElementById("sel-exp").value;
 
-  function buildURL(keyword, seconds) {
-    const encoded = encodeURIComponent(keyword.trim() || "Quality Control Chemist");
-    return `https://www.linkedin.com/jobs/search/?f_TPR=r${seconds}&keywords=${encoded}&sortBy=R`;
-  }
+  const wm = ["wm-onsite","wm-remote","wm-hybrid"]
+    .filter(id => document.getElementById(id).checked)
+    .map(id => document.getElementById(id).value);
 
-  function getKeyword() {
-    return document.getElementById("keyword-input").value.trim() || "Quality Control Chemist";
-  }
+  const jt = ["jt-ft","jt-pt","jt-ct","jt-tmp","jt-vol","jt-int"]
+    .filter(id => document.getElementById(id).checked)
+    .map(id => document.getElementById(id).value);
 
-  function renderCards() {
-    const kw = getKeyword();
-    const list = document.getElementById("filter-list");
-    list.innerHTML = "";
+  let url = "https://www.linkedin.com/jobs/search/?";
+  const params = [];
 
-    FILTERS.forEach((f, i) => {
-      const url = buildURL(kw, f.seconds);
+  if (keyword)  params.push("keywords=" + encodeURIComponent(keyword));
+  if (location) params.push("location=" + encodeURIComponent(location));
+  if (time)     params.push("f_TPR=" + time);
+  if (sort)     params.push("sortBy=" + sort);
+  if (wm.length) params.push("f_WT=" + wm.map(encodeURIComponent).join("%2C"));
+  if (jt.length) params.push("f_JT=" + jt.map(encodeURIComponent).join("%2C"));
+  if (exp)      params.push("f_E=" + exp);
+  if (salary)   params.push("f_SB2=" + salary);
 
-      const card = document.createElement("div");
-      card.className = "filter-card";
-      card.innerHTML = `
-        <div class="filter-meta">
-          <span class="time-badge">${f.label}</span>
-          <div class="filter-info">
-            <div class="filter-label">${f.label} &mdash; ${kw}</div>
-            <div class="filter-url">${url}</div>
-          </div>
-        </div>
-        <div class="filter-actions">
-          <button class="icon-btn" id="copy-btn-${i}" onclick="copyURL(${i}, '${url.replace(/'/g,"\'")}', this)" title="Copy URL" aria-label="Copy URL">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
-            </svg>
-          </button>
-          <a class="icon-btn" href="${url}" target="_blank" rel="noopener noreferrer" title="Open on LinkedIn" aria-label="Open on LinkedIn">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
-            </svg>
-          </a>
-        </div>
-      `;
-      list.appendChild(card);
-    });
-  }
+  return url + params.join("&");
+}
 
-  function applyKeyword() {
-    renderCards();
-  }
+function updatePreview() {
+  const url = buildURL();
+  document.getElementById("url-preview-text").textContent = url;
+}
 
-  document.getElementById("keyword-input").addEventListener("keydown", function(e) {
-    if (e.key === "Enter") applyKeyword();
+function openSearch() {
+  window.open(buildURL(), "_blank", "noopener,noreferrer");
+}
+
+function copyURL() {
+  const btn = document.getElementById("url-copy-btn");
+  navigator.clipboard.writeText(buildURL()).then(() => {
+    btn.classList.add("copied");
+    btn.innerHTML = `<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>`;
+    setTimeout(() => {
+      btn.classList.remove("copied");
+      btn.innerHTML = `<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>`;
+    }, 1800);
   });
+}
 
-  function copyURL(index, url, btn) {
-    navigator.clipboard.writeText(url).then(() => {
-      btn.classList.add("copied");
-      btn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>`;
-      setTimeout(() => {
-        btn.classList.remove("copied");
-        btn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>`;
-      }, 1800);
-    });
+function resetAll() {
+  document.getElementById("inp-keyword").value = "Quality Control Chemist";
+  document.getElementById("inp-location").value = "";
+  document.getElementById("sel-time").value = "r3600";
+  document.getElementById("sel-sort").value = "R";
+  document.getElementById("sel-salary").value = "";
+  document.getElementById("sel-exp").value = "";
+  ["wm-onsite","wm-remote","wm-hybrid","jt-ft","jt-pt","jt-ct","jt-tmp","jt-vol","jt-int"]
+    .forEach(id => document.getElementById(id).checked = false);
+  updatePreview();
+}
+
+function setQuickFilter(preset) {
+  resetAll();
+  if (preset === "past1h") {
+    document.getElementById("sel-time").value = "r3600";
+  } else if (preset === "past6h") {
+    document.getElementById("sel-time").value = "r21600";
+  } else if (preset === "past24h") {
+    document.getElementById("sel-time").value = "r86400";
+  } else if (preset === "reset") {
+    // already reset
+  }
+  updatePreview();
+}
+
+// Live URL preview on any input change
+document.querySelectorAll("input, select").forEach(el => {
+  el.addEventListener("input", updatePreview);
+  el.addEventListener("change", updatePreview);
+});
+
+// Enter key on keyword/location
+["inp-keyword","inp-location"].forEach(id => {
+  document.getElementById(id).addEventListener("keydown", e => {
+    if (e.key === "Enter") openSearch();
+  });
+});
+
+// ── Theme toggle ─────────────────────────────────
+(function() {
+  const root = document.documentElement;
+  const btn  = document.querySelector("[data-theme-toggle]");
+  let theme  = "dark";
+  root.setAttribute("data-theme", theme);
+
+  function setIcon(t) {
+    btn.innerHTML = t === "dark"
+      ? `<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>`
+      : `<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>`;
   }
 
-  function openAll() {
-    const kw = getKeyword();
-    FILTERS.forEach(f => {
-      window.open(buildURL(kw, f.seconds), "_blank", "noopener,noreferrer");
-    });
-  }
-
-  // Theme toggle
-  (function() {
-    const root = document.documentElement;
-    const btn = document.querySelector("[data-theme-toggle]");
-    let theme = "dark";
+  setIcon(theme);
+  btn.addEventListener("click", () => {
+    theme = theme === "dark" ? "light" : "dark";
     root.setAttribute("data-theme", theme);
-
-    function setIcon(t) {
-      btn.innerHTML = t === "dark"
-        ? `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>`
-        : `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>`;
-    }
-
     setIcon(theme);
+  });
+})();
 
-    btn.addEventListener("click", () => {
-      theme = theme === "dark" ? "light" : "dark";
-      root.setAttribute("data-theme", theme);
-      setIcon(theme);
-    });
-  })();
-
-  // Initial render
-  renderCards();
+// Init preview
+updatePreview();
 </script>
-
 </body>
 </html>

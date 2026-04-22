@@ -690,10 +690,17 @@ function resetAll() {
 }
 
 function setQuickFilter(preset) {
-  resetAll();
-  if (preset === "past1h")       document.getElementById("sel-time").value = "r3600";
-  else if (preset === "past6h")  document.getElementById("sel-time").value = "r21600";
-  else if (preset === "past24h") document.getElementById("sel-time").value = "r86400";
+  if (preset === "past1h") {
+    document.getElementById("sel-time").value = "r3600";
+  } else if (preset === "past6h") {
+    document.getElementById("sel-time").value = "r21600";
+  } else if (preset === "past24h") {
+    document.getElementById("sel-time").value = "r86400";
+  } else if (preset === "reset") {
+    resetAll();
+    return;
+  }
+
   updatePreview();
 }
 

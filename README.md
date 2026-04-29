@@ -1,4 +1,4 @@
-# LinkedIn Job Filter
+# LinkedIn Job Search
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
 [![Live Demo](https://img.shields.io/badge/live%20demo-GitHub%20Pages-2ea44f.svg)](https://rejaul-rajib.github.io/linkedin-filters/)
